@@ -16,8 +16,8 @@ this_year = "2020"
 # The ranking values for each year
 w_lookup = {
     "2020": 100,
-    "2019": 55,
-    "2018": 1,
+    "2019": 65,
+    "2018": 45,
 }
 
 # Players not to choose this season (due to injuries, or maybe you just don't
