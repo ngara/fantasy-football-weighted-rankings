@@ -16,22 +16,18 @@ this_year = "2020"
 # The ranking values for each year
 w_lookup = {
     "2020": 100,
-    "2019": 65,
-    "2018": 45,
+    "2019": 55,
+    "2018": 35,
 }
 
 # Players not to choose this season (due to injuries, or maybe you just don't
 # want to use this player this year)
-injuries = [
+skip = [
     "David Montgomery",
     "Joe Mixon",
-    # "Alshon Jeffery",
-    # "Josh Gordon",
-    # "Jerick McKinnon",
-    # "Evan Engram", # week1?
-    # "Marqise Lee",
-    # "DeVante Parker",
-    # "Nelson Agholor",
+    "Clyde Edwards-Helaire",
+    "LeVeon Bell",
+    "Carson Wentz",
 ]
 
 # Walk data path and read all .csv filenames
@@ -99,11 +95,11 @@ final_list.sort(key=lambda x: x[2])
 line_no = 0
 for li in final_list:
     line_no += 1
-    if li[0] in injuries:
-        inj = "(I)"
+    if li[1] in skip:
+        sk = "(SKIP)"
     else:
-        inj = ""
+        sk = ""
     print(
-        "%3s %4s %20s %7.2f  (%i) %4s"
-        % (line_no, li[0], li[1], li[2], li[3], inj)
+        "%3s %4s %20s %7.2f  (%i) %6s"
+        % (line_no, li[0], li[1], li[2], li[3], sk)
     )
