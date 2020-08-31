@@ -16,7 +16,7 @@ this_year = "2020"
 # The ranking values for each year
 w_lookup = {
     "2020": 100,
-    "2019": 55,
+    "2019": 45,
     "2018": 35,
 }
 
