@@ -100,6 +100,6 @@ for li in final_list:
     else:
         sk = ""
     print(
-        "%3s %4s %20s %7.2f  (%i) %6s"
+        "%3s %4s %22s %7.2f  (%i) %6s"
         % (line_no, li[0], li[1], li[2], li[3], sk)
     )
