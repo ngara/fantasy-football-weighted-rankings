@@ -61,6 +61,18 @@ favor = [
     "Dak Prescott",
     "Matt Ryan",
     "Gardner Minshew",
+
+    "Jonathan Taylor",
+    "Christian McCaffrey",
+    "Chris Carson",
+    "Damien Harris",
+    "Philip Rivers",
+    "T.J. Hockenson",
+    "Leonard Fournette",
+    "Blake Jarwin",
+    "Antonio Gibson",
+    "Kyler Murray",
+    "Tyler McLaurin",
 ]
 
 # Walk data path and read all .csv filenames
