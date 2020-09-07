@@ -133,7 +133,8 @@ for name in data.keys():
 
     position = data[name][this_year]["halfppr"]["position"]
     bye = data[name][this_year]["halfppr"]["bye"]
-    final_list.append([position, name, weighted_adp_final, bye])
+    team = data[name][this_year]["halfppr"]["team"]
+    final_list.append([position, name, weighted_adp_final, bye, team])
 
 final_list.sort(key=lambda x: x[2])
 
@@ -147,6 +148,6 @@ for li in final_list:
     else:
         sk = ""
     print(
-        "%3s %4s %22s %7.2f  (%i) %7s"
-        % (line_no, li[0], li[1], li[2], li[3], sk)
+        "%3s %4s %22s %7.2f  (%2i) %4s  %7s"
+        % (line_no, li[0], li[1], li[2], li[3], li[4], sk)
     )
