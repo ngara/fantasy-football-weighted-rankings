@@ -28,6 +28,39 @@ skip = [
     "Clyde Edwards-Helaire",
     "LeVeon Bell",
     "Carson Wentz",
+    "Leonard Fournette",
+]
+
+favor = [
+    "Joe Burrow",
+    "Tyler Boyd",
+    "James Conner",
+    "Juju Smith-Schuster",
+    "Diontae Johnson",
+    "James Washington",
+    "Chris Godwin",
+    "Mike Evans",
+    "Deshaun Watson",
+    "Terry McLaurin",
+    "James White",
+    "Jameson Crowder",
+    "Chris Herndon",
+    "Kenny Golladay",
+    "Marvin Jones",
+    "A.J. Brown",
+    "Marquise Brown",
+    "DK Metcalf",
+    "Tyler Lockett",
+    "CeeDee Lamb",
+    "Anthony Miller",
+    "DeSean Jackson",
+    "Allen Robinson",
+    "D.J. Chark",
+    "Arthur Smith",
+    "Russell Wilson",
+    "Dak Prescott",
+    "Matt Ryan",
+    "Gardner Minshew",
 ]
 
 # Walk data path and read all .csv filenames
@@ -97,9 +130,11 @@ for li in final_list:
     line_no += 1
     if li[1] in skip:
         sk = "(SKIP)"
+    elif li[1] in favor:
+        sk = "(Favor)"
     else:
         sk = ""
     print(
-        "%3s %4s %22s %7.2f  (%i) %6s"
+        "%3s %4s %22s %7.2f  (%i) %7s"
         % (line_no, li[0], li[1], li[2], li[3], sk)
     )
